@@ -1,0 +1,34 @@
+.searchArea{
+    flex: 59%
+  }
+
+  .searchArea input{ 
+    border-radius: 6px 0px 0px 6px;
+    width: 100%;
+    border: 0px;
+    background: #FFF;
+    padding: 20px 10px  20px  70px;
+    outline: none;
+    font-size: 16px;
+    color: #2C2C2C;
+    background: url("../../public/img/inputsearch.png") no-repeat 35px 18px #FFF;
+}
+
+.searchArea  button {
+    flex-shrink: 0;
+    background: #EF262C;
+    border: none;
+    color: white;
+    padding: 0px 25px;
+    border-radius: 0px 6px 6px 0px;
+    font-size: 18px;
+}
+
+
+@media screen and (max-width: 700px) {
+  .searchArea input{ 
+    padding: 10px 10px  10px  50px;
+     
+    background: url(/_next/static/media/inputsearch.10db95ea.png) no-repeat 15px 8px #FFF;
+  }
+}

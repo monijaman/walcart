@@ -1,0 +1,67 @@
+.categories {
+    margin-top: 70px;
+}
+
+.categories ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.categories ul li {
+    flex: 0 0 23%;
+    margin: 10px 0;
+    align-self: stretch;
+    list-style-type: none;
+}
+
+.categories ul li a {
+    padding: 15px 15px;
+    background: #fff;
+    color: #303030;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.categories ul li a img {
+    margin: 0 15px;
+}
+
+.imgContainer{
+    padding-right: 15px;
+}
+
+
+@media screen and (max-width: 700px) {
+    .categories ul,
+    .flexrow,
+    .row, .navbar {   
+      flex-direction: column;
+    }
+  
+    .categories ul li{
+      flex: none;
+    }
+  
+ 
+  
+    .categories{
+      margin-top: 15px;
+    }
+   
+     
+  
+      .categories ul li{
+        margin: 2px 0;
+      }
+  
+      .categories ul li a{ 
+        padding: 5px 0;
+      }
+   
+  }
+  

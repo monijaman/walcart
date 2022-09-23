@@ -1,0 +1,130 @@
+.side {
+    flex: 18%;
+    background-color: #FFF;
+    /* padding: 20px; */
+  }
+ 
+
+  .verticalMenu > li > a,
+ .parent {
+	display: block;
+  font-size: 14px;
+	position: relative;
+	line-height: 30px;
+}
+
+.verticalMenu li img{
+  margin: 0 15px;
+}
+
+
+.verticalMenu > li > a,
+.parent a {
+	margin: 5px;
+	color: #303030;
+	text-decoration: none;
+  padding: 7px 5px;
+}
+
+.parent:hover>ul {
+	display: block;
+	position: absolute;
+  z-index: 15;
+  right: -230px;
+  top:0
+}
+
+.child {
+	display: none;
+  width: 230px;
+}
+
+.verticalMenu li,
+.child li {
+	background-color: #FFF;
+	line-height: 30px;
+	border-bottom: #F4F4F4 1px solid;
+	width: 100%;
+}
+
+
+.verticalMenu li:last-child{
+  border: none;
+}
+.verticalMenu li a,
+.child li a {
+	color: #000000;
+  display: block;
+  margin: 0;
+  font-size: 14px;
+  color: #303030;
+  padding: 10px 25px;
+}
+
+.verticalMenu > li > a{
+    padding-left: 50px;
+}
+.verticalMenu li .imageWrapper{
+    width: 50px;
+    position: absolute;
+    left: 15px;
+    top:10px;
+    display: inline;
+  }
+ 
+.side ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0px;
+	min-width: 10em;
+  border-radius: 0px 6px 6px 0px;
+}
+
+.side ul ul ul {
+	left: 100%;
+	top: 0;
+	 
+}
+
+ 
+.verticalMenu li:hover,
+.parent li:hover {
+	background: #FFF2F2;
+}
+
+.expand {
+	font-size: 26px;
+	float: right;
+	margin-right: 5px;
+  color:  #6F6F6F;
+  ;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+  
+  .row, .navbar {   
+    flex-direction: column;
+  }
+
+   
+
+    /* menu */
+    .side ul ul ul{
+      left: 0;
+    }
+    .parent:hover>ul{
+      position: relative;
+      display: block;
+      right: auto;
+      width: 100%;
+    }
+}

@@ -1,0 +1,148 @@
+.headLastBlock {
+    display: flex;
+    margin-top: 20px;
+}
+
+.headLastBlock .navbar a {
+    position: relative;
+}
+
+.headLastBlock .accounArea p {
+    color: #FF4E53;
+    font-size: 16px;
+    margin: 0;
+    font-weight: bold;
+    position: relative;
+}
+
+.headLastBlock .accounArea div>span {
+    font-size: 12px;
+    color: #979797;
+}
+
+.headLastBlock .accounArea p span {
+    position: absolute;
+    color: #c1c0c0;
+    right: -20px;
+    top: -18px
+}
+
+
+.headLastBlock .accounArea div {
+    padding-left: 15px;
+    text-align: left;
+}
+
+
+.headLastBlock .navbar {
+    flex: 60%;
+    background: none;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.headLastBlock .accounArea {
+    flex: 15%;
+    justify-content: center;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    cursor: pointer;
+}
+
+.btnTopCat {
+    background: #EF262C;
+}
+
+.btnTopCat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    background: #EF262C;
+    border-radius: 10px 10px 0px 0px;
+    padding: 19px 30px;
+    position: relative;
+    font-size: 16px;
+    height: 100%;
+
+}
+
+.topCategories {
+    flex: 24%;
+}
+
+.btnTopCat::before {
+    content: "";
+    background: url("../../public/img/menu.png") no-repeat;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 20px;
+    left: 18px;
+}
+
+.btnTopCat .triangleDown {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #FFF;
+    position: absolute;
+    right: 45px;
+    top: 22px
+}
+.navbar {
+    display: flex;
+    background-color: #333;
+  }
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .arrowDown {
+    position: absolute;
+    right:0px;
+    font-size: 18px;
+    top:5px;
+    font-size: 24px;
+  }
+
+
+  @media screen and (max-width: 700px) {
+
+    .headLastBlock,
+    .flexrow,
+    .row, .navbar {   
+      flex-direction: column;
+    }
+    .btnTopCat {
+      padding: 10px 20px;
+      border-radius: 0px;
+    }
+  
+    .container{
+      padding: 5px
+    }
+      .navbarLeft ul li a::after {
+        display: none;
+      }
+   
+      .headLastBlock{
+        margin-top: 0;
+      }
+  
+      
+.btnTopCat::before {
+ 
+  top:  10px;
+  left: 18px;
+}
+   
+  }
+  

@@ -1,0 +1,36 @@
+
+.addBlock{
+    flex: 25%;
+   
+  }
+  
+  
+  .addBlock   a{
+    display: block;
+    margin-bottom: 20px;
+  }
+
+
+
+
+  @media screen and (max-width: 700px) {
+     
+  
+    .addBlock{
+       display: flex;  gap: 10px;
+       flex: 100%;
+      flex-direction: column;
+    }
+    .addBlock .imgContainer{
+      flex: 48%;
+      max-width: 100%;
+      justify-content: space-around;
+     text-align: center;
+    }
+   
+    .container{
+      padding: 5px
+    }
+     
+  }
+  
