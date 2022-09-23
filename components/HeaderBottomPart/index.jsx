@@ -14,8 +14,8 @@ export default function HeaderBtmPart() {
             </div>
 
             <div className={styles.navbar}>
-                <Link href="#"><a> Exclusive Deals <span className={styles.arrowDown}>&#8964;</span> </a></Link>
-                <Link href="#"><a>Smart Watches <span className={styles.arrowDown}>&#8964;</span></a></Link>
+                <Link href="#"><a> Exclusive Deals <span className={styles.arrowDown}></span> </a></Link>
+                <Link href="#"><a>Smart Watches <span className={styles.arrowDown}></span></a></Link>
                 <Link href="#"><a>Cell Phone</a></Link>
                 <Link href="#"><a>Headphone</a></Link>
             </div>
@@ -28,7 +28,7 @@ export default function HeaderBtmPart() {
                 />
                 <div>
                     <span>Only this weekend</span>
-                    <p> Super Discount <span className={styles.arrowDown}>&#8964;</span></p>
+                    <p> Super Discount <span className={styles.arrowDown}></span></p>
 
                 </div>
             </div>

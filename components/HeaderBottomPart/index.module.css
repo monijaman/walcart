@@ -20,13 +20,13 @@
     color: #979797;
 }
 
-.headLastBlock .accounArea p span {
+/* .headLastBlock .accounArea p span {
     position: absolute;
     color: #c1c0c0;
     right: -20px;
     top: -18px
 }
-
+ */
 
 .headLastBlock .accounArea div {
     padding-left: 15px;
@@ -108,12 +108,24 @@
   .arrowDown {
     position: absolute;
     right:0px;
-    font-size: 18px;
-    top:5px;
-    font-size: 24px;
+
+    top:20px;
+ 
+    border: solid #FFF;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 2px;
+ 
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
   }
 
-
+  .accounArea  .arrowDown {
+    border: 1px solid #FFF;
+    border-width: 0 1px 1px 0;
+    padding: 3px;
+    top:-11px
+  }
   @media screen and (max-width: 700px) {
 
     .headLastBlock,
@@ -132,12 +144,20 @@
       .navbarLeft ul li a::after {
         display: none;
       }
-   
+
+      .arrowDown {
+        right: 20px;
+      }
+      .accounArea  .arrowDown {
+        right: 0px;
+      }
       .headLastBlock{
         margin-top: 0;
       }
   
-      
+      .btnTopCat .triangleDown {
+        top: 16px;
+      }
 .btnTopCat::before {
  
   top:  10px;
