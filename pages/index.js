@@ -1,9 +1,21 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-
+import Link from 'next/link'
+import Layout from '../components/Layout'
 export default function Home() {
+
+  function toggleMenu() {
+    var x = document.getElementById("showMobileMenu");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+
   return (
+    <Layout>
     <div className={styles.container}>
       <Head>
         <title>Create Next App</title>
@@ -11,59 +23,324 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+       
+      {/* <!-- Header --> */}
+      <div className="header">
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+        <div className="mobileMenu" onClick={toggleMenu}>
+          <Link href="javascript:void(0);" className="icon" >
+            <i className="fa fa-bars"></i>
+          </Link></div>
+        <div className="topNavContainer" id="showMobileMenu">
+          <div className="container ">
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+            <div className="flexrow">
+              <div className="navbarLeft">
+                <ul>
+                  <li><Link href="#">About Us</Link></li>
+                  <li><Link href="#">My Account</Link></li>
+                  <li><Link href="#">Featured Products</Link></li>
+                  <li><Link href="#">Contact</Link></li>
+                </ul>
+              </div>
+              <div className="navbarRight">
+                <ul>
+                  <li><Link href="#">Order Tracking</Link></li>
+                  <li><Link href="#">English </Link><i className="arrow down"></i></li>
+                  <li><Link href="#">USD </Link><i className="arrow down"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-      </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+        {/* <!-- mid Header Block  --> */}
+        <div className="container ">
+          <div className="flexrow midHeaderArea">
+
+            <div className="logoArea">
+              <Image
+                src="/img/logo.png"
+                alt=""
+                width="140" height="30"
+
+              />
+
+            </div>
+
+            <div className="searchArea">
+              <div className="searchBar">
+                <form action="" className="form">
+                  <input type="text" placeholder="What do you want to order?" />
+                  <button type="submit" value="Search" className="search-button">Search</button>
+                </form>
+              </div>
+            </div>
+
+            <div className="infoArea">
+              <ul>
+                <li>
+                  <div className="accounArea">
+
+                    <Image
+                      src="/img/account.png"
+                      alt=""
+                      width="25" height="28"
+                    />
+                    <div>
+                      <span>Sign in</span>
+                      Account
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <span className="alert">1</span>
+                  <Image
+
+                    src="/img/lovesign.png"
+                    alt=""
+                    width="30" height="30"
+                  />
+
+                </li>
+                <li>
+                  <span className="alert">1</span>
+                  <Image
+
+                    src="/img/cartsign.png"
+                    alt=""
+                    width="30" height="30"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="container headLastBlock">
+          <div className="topCategories">
+            <div className="btnTopCat"> Top Categories <span className="triangle-down"> </span></div>
+          </div>
+
+          {/* <!-- Navigation Bar --> */}
+          <div className="navbar">
+            <Link href="#"><> Exclusive Deals <span className="arrowDown">&#8964;</span> </></Link>
+            <Link href="#"><>Smart Watches <span className="arrowDown">&#8964;</span></></Link>
+            <Link href="#"><>Cell Phone</></Link>
+            <Link href="#"><>Headphone</></Link>
+          </div>
+
+
+          <div className="accounArea">
+            <Image
+
+              src="/img/screenshot.png"
+              alt=""
+              width="28" height="28"
+            />
+            <div>
+              <span>Only this weekend</span>
+              <p> Super Discount <span className="arrowDown">&#8964;</span></p>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      {/* <!-- The flexible grid (content) --> */}
+      <section className="container bodycontainer">
+        <div className="row">
+
+          <div className="side">
+            <ul className="verticalMenu">
+              <li className="parent"><a href="#">
+                <Image
+
+                  src="/img/laptop.png"
+                  alt=""
+                  width="16" height="13"
+                />
+
+                Laptop and Desktop  <span className="expand">&#x203A;</span></a>
+                <ul className="child">
+                  <li className="parent"><a href="#">Laptop and Desktop <span className="expand">&#x203A;</span></a>
+                    <ul className="child">
+                      <li><a href="#">Home Living</a></li>
+                      <li><a href="#">Book and Stationary </a></li>
+                      <li><a href="#">Home Appliances </a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Home Living</a></li>
+                  <li><a href="#">Book and Stationary</a></li>
+                  <li><a href="#">Home Appliances</a></li>
+                  <li><a href="#">Book and Stationary</a></li>
+                  <li><a href="#">Home Appliances</a></li>
+                  <li><a href="#">Electronics Appliances </a></li>
+                  <li><a href="#">Fast Food and Snacks</a></li>
+
+                </ul>
+              </li>
+
+              <li> <a href="#">
+                <Image
+
+                  src="/img/homeliving.png"
+                  alt=""
+                  width="15" height="10"
+                /> Home Living</a> </li>
+              <li> <a href="#">
+                <Image
+
+                  src="/img/oven.png"
+                  alt=""
+                  width="15" height="10"
+                />
+                Book and Stationary <span className="expand">&#x203A;</span></a> </li>
+              <li> <a href="#">
+                <Image
+
+                  src="/img/home.png"
+                  alt=""
+                  width="15" height="10"
+                />
+                Home Appliances</a> </li>
+              <li> <a href="#">
+                <Image
+
+                  src="/img/book.png"
+                  alt=""
+                  width="15" height="10"
+                />
+                Book and Stationary</a> </li>
+              <li> <a href="#">
+                <Image
+
+                  src="/img/mobile.png"
+                  alt=""
+                  width="15" height="10"
+                />
+                Electronics Appliances</a> </li>
+              <li> <a href="#">
+                <Image
+
+                  src="/img/fastfood.png"
+                  alt=""
+                  width="15" height="10"
+                />
+                Fast Food and Snacks <span className="expand">&#x203A;</span></a> </li>
+              <li> <a href="#">
+                <Image
+
+                  src="/img/category.png"
+                  alt=""
+                  width="15" height="10"
+                />
+                More Categories</a> </li>
+            </ul>
+          </div>
+
+          <div className="main ">
+            <div className="bannerBlock">
+              <Image
+
+                src="/img/image_banner.png"
+                alt=""
+                width="557" height="346"
+              />
+
+            </div>
+            <div className="addBlock">
+              <Image
+
+                src="/img/addBlock1.png"
+                alt=""
+                width="277" height="159"
+              />
+              <Image
+
+                src="/img/addBlock2.png"
+                alt=""
+                width="277" height="159"
+              />
+
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+
+      <section className="categories">
+        <div className="container">
+          <h2>Popular Product Categories</h2>
+          <ul>
+            <li><Link href="#"><>
+              <Image
+
+                src="/img/ic8.png"
+                alt=""
+                width="40" height="40"
+              /> 
+              Electronics Appliances</></Link></li>
+            <li><Link href="#"><>
+              <Image
+
+                src="/img/el.png"
+                alt=""
+                width="40" height="40"
+              />
+              Electronics Appliances</></Link></li>
+            <li><Link href="#"><>
+              <Image
+
+                src="/img/dress.png"
+                alt=""
+                width="40" height="40"
+              />
+              Electronics Appliances</></Link></li>
+            <li><Link href="#"><>
+              <Image
+
+                src="/img/ic8.png"
+                alt=""
+                width="40" height="40"
+              />
+              Electronics Appliances</></Link></li>
+            <li><Link href="#"><> <Image
+
+              src="/img/ic8.png"
+              alt=""
+              width="40" height="40"
+            /> Electronics Appliances</></Link></li>
+            <li><Link href="#"><>
+              <Image
+
+                src="/img/ic8.png"
+                alt=""
+                width="40" height="40"
+              />  Electronics Appliances</></Link></li>
+            <li><Link href="#"><> <Image
+
+              src="/img/ic8.png"
+              alt=""
+              width="40" height="40"
+            />Electronics Appliances</></Link></li>
+            <li><Link href="#"><> <Image
+
+              src="/img/ic8.png"
+              alt=""
+              width="40" height="40"
+            /> Electronics Appliances</></Link></li>
+          </ul>
+        </div>
+      </section>
+
+       
+
     </div>
+    </Layout>
   )
 }
