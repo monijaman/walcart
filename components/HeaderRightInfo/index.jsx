@@ -10,12 +10,13 @@ export default function HeaderRightBclok() {
       <ul>
         <li>
           <div className={styles.accounArea}>
-
+    <div className={styles.imgcontainer}></div>
             <Image 
               src="/img/account.png"
               alt=""
-              width="50" height="50"
+              width="0" height="50"
             />
+            
             <div className={styles.accimg}>
               <span>Sign in</span>
               Account

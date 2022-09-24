@@ -59,7 +59,12 @@
     display: block;
   
   }
-
+   .imgcontainer{
+width: 40px;
+height: 30px;
+display: block;
+background: url("../../public/img/account.png") no-repeat center;
+  }
 
   @media screen and (max-width: 700px) {
    
@@ -84,6 +89,8 @@
       .headLastBlock{
         margin-top: 0;
       }
+
+   
   
       .midHeaderArea{
         padding: 10px 0;
