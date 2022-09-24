@@ -25,22 +25,15 @@ export default function HeaderRightBclok() {
         </li>
         <li>
           <span className={styles.alert}>1</span>
-          <Image
-
-            src="/img/lovesign.png"
-            alt=""
-            width="30" height="30"
-          />
+          <span className={styles.likeSign}></span>
+       
+         
 
         </li>
         <li>
           <span className={styles.alert}>1</span>
-          <Image
-
-            src="/img/cartsign.png"
-            alt=""
-            width="30" height="30"
-          />
+          <span className={styles.cartsign}></span>
+         
         </li>
       </ul>
     </div>
