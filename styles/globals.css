@@ -87,104 +87,13 @@ body {
 }
 .navbarLeft{
   flex: 50%;
-  /* text-align: left; */
+   
 }
- 
-/* .topNavContainer{
-  border-bottom: 1px solid #3d1f21;
-}
-.topNavContainer ul{
-  margin: 0;
-  padding: 0px 0;
-  display: flex;
-  list-style-type: none;
-} */
-/* .navbarRight li {
-  position: relative;
-}
-
-
-
-.navbarRight .arrow{
-  position: absolute;
-  right: -4px;
-  top:4px
-} */
-
-/* 
-.topNavContainer ul li{
-  margin: 0;
-  padding: 10px 0;
   
-}
-.topNavContainer ul li  a{
-  color: #FFF;
-  text-decoration: none;
-  display: block;
-  position: relative;
-  padding: 0px 8px;
-  font-family:Inter;
-  font-size:12px;
-  position: relative;
-  font-family: Arial, Helvetica, sans-serif;
-} */
-/* 
-.navbarLeft ul li a::after{
-  content: "";
-  position: absolute;
-  border-right: 1px solid #FFF;
-  width: 1px;
-  height: 13px;
-  right: 0px;
-  top:0px;
-}
-.navbarLeft   ul li a{
-  padding: 0 18px
-}
-.navbarLeft ul li:last-child a::after{
-display: none;
-}
-
-.navbarLeft ul{
-  justify-content: flex-start;
-} */
-/* .navbarRight ul{
-  justify-content: flex-end;
-}
-.navbarRight ul li {
-  display: block;
-  padding: 10px 15px;
- 
-  } */
-/* Style the top navigation bar */
-/* .navbar {
-  display: flex;
-  background-color: #333;
-} */
-
-/* TOp Categories */
-/* .btnTopCat{
-  background: #EF262C;
-}
-
-.btnTopCat .triangle-down{
-  position: absolute;
-  right: 45px;
-  top:26px
-} */
-
-/* Style the navigation bar links */
-/* .navbar a {
-  color: white;
-  padding: 14px 20px;
-  text-decoration: none;
-  text-align: center;
-} */
 
 /* Change color on hover */
   a:hover {
-  /* background-color: #ddd; */
-  /* color: black; */
+ 
   opacity: .7;
 }
 
@@ -213,13 +122,7 @@ display: none;
   flex-basis: 260px;
   margin-right: 20px;
 }
-/*
-.magnifying-glass {
-    width: 20px;
-    position: absolute;
-    left: 150px;
-}
-*/
+ 
 .logoArea{
   flex: 18%;
   align-self: center;
@@ -231,124 +134,13 @@ display: none;
  
 max-width: 110px;;
 }
-/* .searchArea{
-  flex: 59%
-} */
-
-/* .infoArea{
-  flex: 23%;
-} */
+ 
 
 .midHeaderArea{
   padding:30px 0 ;
   align-items: center;
 }
-/* 
-.infoArea ul{
-  justify-content: flex-end;
-}
-.infoArea .accounArea{
-display: flex;
-align-items: center;
-margin:auto;
-}
-
-.infoArea .accounArea div{
-  text-align: left;
-  
-}
-.infoArea .accounArea span{
-  color: #a9a4a4;
-} */
-
-/* .infoArea img {
-  padding: 0 15px;
-  transition: margin 300ms;
-} */
-/* 
-.infoArea .alert{
-  background: #EF262C;
-  padding: 2px 6px;
-  display: block;
-  position: absolute;
-  right: 5px;
-  top:0;
-  z-index: 9;
-  border-radius: 80px;
-  font-size: 10px;
-  
-  text-align: center;
-}
-
-.infoArea ul {
-  display: flex;
-  margin: 0;
-  justify-content:flex-end
-}
-.infoArea ul li{
-  position: relative;
-  list-style-type: none;
-  padding-left: 20px;
-} */
-/* .accounArea div{
-  flex:none
-}
-
-.accounArea span{
-  display: block;
-
-} */
-/* 
-.searchBar input{ 
-    border-radius: 6px 0px 0px 6px;
-    width: 100%;
-    border: 0px;
-    background: #FFF;
-    padding: 20px 10px  20px  70px;
-    outline: none;
-    font-size: 16px;
-    color: #2C2C2C;
-    background: url("../public/img/inputsearch.png") no-repeat 35px 18px #FFF;
-}
-
-.searchBar  button {
-    flex-shrink: 0;
-    background: #EF262C;
-    border: none;
-    color: white;
-    padding: 0px 25px;
-    border-radius: 0px 6px 6px 0px;
-    font-size: 18px;
-} */
-
-/* header last block */
-/* 
-.headLastBlock{
-  display: flex;  
-  margin-top: 20px;
-}
-.headLastBlock .navbar a{
-  position: relative;
-}
-
-.headLastBlock .accounArea p{
-  color: #FF4E53;
-  font-size: 16px;
-  margin: 0;
-  font-weight: bold;
-  position: relative;
-}
-.headLastBlock .accounArea div > span{
-  font-size: 12px;
-  color: #979797;
-}
-
-.headLastBlock .accounArea p span{
-  position: absolute;
-  color:#c1c0c0;
-  right: -20px;
-  top:-22px
-} */
+ 
 
 .arrowDown {
   position: absolute;
@@ -357,56 +149,7 @@ margin:auto;
   top:5px;
   font-size: 24px;
 }
-
-/* .topCategories{
-  flex: 24%;
-} */
-/* 
-.headLastBlock .accounArea div{
-  padding-left: 15px;
-} */
-/* 
-.btnTopCat{
-  display: flex;
-  align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            cursor: pointer;
-  background: #EF262C;
-  border-radius: 10px 10px 0px 0px;
-  padding: auto 30px;
-  position: relative;
-  font-size: 16px;
-  height: 100%;
-   
-}
-
-.btnTopCat::before{
-  content: "";
-  background: url("../public/img/menu.png") no-repeat;
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  top: 20px;
-  left: 18px;
-} */
-/* 
-.headLastBlock .navbar{
-  flex: 60%;
-  background: none;
-  justify-content: center;
-  padding-bottom: 10px;
-}
-
-.headLastBlock .accounArea{
-  flex: 15%; 
-  justify-content: center;
-  padding-bottom: 10px;
-  display: flex;
-align-items: center;
-margin:auto;
-cursor: pointer;
-} */
+ 
  
 
 /* Column container */
