@@ -37,13 +37,13 @@
 .headLastBlock .navbar {
     flex: 60%;
     background: none;
-    justify-content: center;
+    justify-content: space-around;
     padding-bottom: 10px;
 }
 
 .headLastBlock .accounArea {
-    flex: 15%;
-    justify-content: center;
+    flex: 20%;
+    justify-content:  flex-end;
     padding-bottom: 10px;
     display: flex;
     align-items: center;

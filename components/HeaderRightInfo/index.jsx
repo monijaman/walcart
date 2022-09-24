@@ -14,7 +14,7 @@ export default function HeaderRightBclok() {
             <Image 
               src="/img/account.png"
               alt=""
-              width="25" height="28"
+              width="50" height="50"
             />
             <div className={styles.accimg}>
               <span>Sign in</span>
